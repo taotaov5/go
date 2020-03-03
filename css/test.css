@@ -1,0 +1,147 @@
+#main {
+	width: 1905px;
+}
+
+#header {
+	border: solid 0px;
+	border-color: red;
+	height: 100px;
+	background-color: #FFFFFF;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	position: relative;
+}
+
+.audeiencediv {
+	position: relative;
+	float: left;
+}
+
+.titile {
+	position: relative;
+	float: left;
+	margin-left: 68px;
+	cursor:pointer;
+}
+
+.titile:hover {
+	border-bottom: solid #D8DBDC;
+}
+
+.priturediv {
+	position: relative;
+	float: left;
+	width: 49%;
+	height: 100%;
+	background-color: white;
+}
+.thechart
+ {
+	position: relative;
+	float: left;
+	width: 49%;
+	height: 100%;
+	background-color: white;
+}
+
+
+.div_header {
+	line-height: 85px;
+	text-align: center;
+	float: left;
+	width: 30px;
+	height: 30px;
+	top: 30px;
+	margin-left: 8px;
+	border-style: solid;
+	border-color: black;
+	position: relative;
+	display: ;
+	left: 75.2%;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.el-carousel__item h3 {
+	color: #475669;
+	font-size: 14px;
+	opacity: 0.75;
+	line-height: 150px;
+	margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+	background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+	background-color: #d3dce6;
+}
+
+#logo_one {
+	background-color: #F92525;
+	left: 190px;
+	top: 30px;
+	width: 150px;
+	height: 40px;
+	position: absolute;
+}
+.bottombig{
+	position:relative;
+	float:left;
+	width:150px;
+	height:200px;
+	top:30px;
+	margin-left:100px;
+	left:330px;
+}
+.bottomsmall{
+	position:relative;
+	width:150px;
+	height:40px;
+	margin-top:3px;
+	font-size:20px;
+	color:#E9E9E9;
+	
+}
+.bottomsmall:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+#logo_two {
+	background-color: #F92525;
+	left: 190px;
+	top:80px;
+	width: 150px;
+	height: 40px;
+	position: relative;
+	color:white;
+}
+
+#center {
+	background-color: #F5F8F9;
+	height: 1567px;
+	border-style: solid;
+	border-color: #E1E0E0;
+	border-width: 0px 0px 2px 0px;
+}
+
+#center_main {
+	background-color: #F5F8F9;
+	margin: 0 auto;
+	height: 1567px;
+	width: 80%;
+	border: solid 0px;
+	border-color: #E1E0E0;
+}
+
+#center_bottomdiv {
+	border: solid 1px;
+	border-color: #E1E0E0;
+	height: 3%;
+	margin-top: 40px;
+}
+
+
+

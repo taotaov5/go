@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/ft-carousel.css" />
+		<link rel="stylesheet" href="css/test.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/index.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/echarts.js"></script>
+	</head>
+
+	<style>
+		div {
+			border: 0px solid red;
+		}
+		
+		.example {
+			width: 624px;
+			height: 336px;
+			font-size: 40px;
+			text-align: center;
+			margin: 20px auto;
+			background-color: #464576;
+		}
+		
+		.carousel-item {
+			line-height: 336px;
+			color: #fff;
+			font-family: Arial Black
+		}
+	</style>
+
+	<body style="background: white;">
+		<div id="main">
+			<!--
+                	作者：offline
+                	时间：2020-03-03
+                	描述：表头
+                -->
+			<div id="header">
+				<div id="logo_one" ><b style="position: relative;top:10px">L O G O</b></div>
+				<div class="div_header" style="background:url('img/设-置.png');"></div>
+				<div class="div_header" style="background:url('img/铃.png');margin-left:25px"></div>
+				<div class="div_header" style="width: 30px;"></div>
+				<div class="div_header" style="width: 140px;height:45px;position: relative;top:23px;background-color: #F92525;"><b style="position: relative;top:-20px">Log Out</b></div>
+			</div>
+			<div id="center">
+				<div id="center_main">
+					<div style="height: 90px;position: relative;top:70px">
+						<div class="audeiencediv" style="width: 375px;height: 90px;">
+							<div style="width: 375px;height: 50px;"><span style="font-size: 38px;font-weight: 350;"> Audience Overview</span></div>
+							<div style="width: 175px;height: 20px;"><span style="font-size: 18px;color:#64686B;font-weight: 350;"> Roserville,CA</span></div>
+						</div>
+						<div class="audeiencediv" style="height: 30px;position: relative;left: 480px;top: 50px;">
+							<div class="titile"><b>DASHBOARD</b></div>
+							<div class="titile"><b>PROJECTS</b></div>
+							<div class="titile"><b>CALENDAR</b></div>
+							<div class="titile"><b>MAILBOX</b></div>
+							<div class="titile"><b>SETTIGS</b></div>
+						</div>
+					</div>
+					<div style="width: 100%;position: relative;top:110px;height: 350px;">
+						<div class="priturediv">
+							<div class="example" style="position: relative;top:-7px;height: 320px;width:720px ;">
+								<div class="ft-carousel" id="carousel_1">
+									<ul class="carousel-inner">
+										<li class="carousel-item"><img src="img/picture_three.png" /></li>
+										<li class="carousel-item"><img src="img/picture_three.png" /></li>
+										<li class="carousel-item"><img src="img/picture_three.png" /></li>
+										<li class="carousel-item"><img src="img/picture_three.png" /></li>
+									</ul>
+								</div>
+							</div>
+
+							<script src="js/jquery.min.js"></script>
+							<script src="js/ft-carousel.min.js"></script>
+							<script type="text/javascript">
+								$("#carousel_1").FtCarousel();
+
+								$("#carousel_2").FtCarousel({
+									index: 1,
+									auto: false
+								});
+
+								$("#carousel_3").FtCarousel({
+									index: 0,
+									auto: true,
+									time: 3000,
+									indicators: false,
+									buttons: true
+								});
+							</script>
+						</div>
+						<div class="priturediv" style="position: relative;left: 27px;">
+							<div style="width: 100%;height: 130px;">
+								<div style="position: relative;float:left;width: 230px;height: 80px;top: 23px;left: 60px;color: #64686A;">
+									<p style="font-size: 25px;">Support Requests</p>
+								</div>
+								<div style="position: relative;float:left;width: 100px;height: 50px;top: 38px;left: 360px;">
+									<center style="font-size: 20px;margin-top: 10px;font-weight:600;color: #7C7F81;">View All</center>
+								</div>
+							</div>
+							<div style="position: relative;width: 632px;left: 61px;height: 217px;">
+								<div style="position: relative;float:left;height: 217px;width: 100px;">
+									<div style="height:40px;width: 100%;position: relative;margin-top: 20px;color: #363B3E;"><b style="font-size: 20px;">TIME</b></div>
+									<div style="height:40px;width: 100%;position: relative;margin-top: 24px;color: #8C8F91;font-size: 16px;">9:45pm</div>
+									<div style="height:40px;width: 100%;position: relative;margin-top: 20px;color: #8C8F91;font-size: 16px;">9:45pm</div>
+								</div>
+								<div style="position: relative;float:left;height: 217px;width: 150px;left:50px">
+									<div style="height:40px;width: 100%;position: relative;margin-top: 20px;color: #363B3E;"><b style="font-size: 20px;">USER NAME</b></div>
+									<div style="height:40px;width: 100%;position: relative;margin-top: 24px;color: #8C8F91;font-size: 16px;">info@design.com</div>
+									<div style="height:40px;width: 100%;position: relative;margin-top: 20px;color: #8C8F91;font-size: 16px;">info@design.com</div>
+								</div>
+								<div style="position: relative;float:left;height: 217px;width: 100px;left:277px">
+									<div style="height:40px;width: 100%;position: relative;margin-top: 20px;color: #363B3E;"><b style="font-size: 20px;position:relative;left:20px">STATUS</b></div>
+									<div style="height:40px;width: 100%;position: relative;margin-top: 20px;color: #8C8F91;font-size: 16px;color:#F8FDF8;border-radius: 5px;background-color: #5DD054;cursor: pointer;">
+										<center style="font-weight:bolder;position:relative;top:8px;">Solved</center>
+									</div>
+									<div style="height:40px;width: 100%;position: relative;margin-top: 20px;color: #8C8F91;font-size: 16px;color:#F8FDF8;border-radius: 5px;background-color: #5DD054;cursor: pointer;">
+										<center style="font-weight:bolder;position:relative;top:8px;">Solved</center>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div style="position:relative;width: 100%;height: 450px;top:135px;background-color:white;display: ;">
+						<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+						<div id="center_tb" style="position:relative;top:30px;width: 99%;height:380px;"></div>
+
+					</div>
+
+					<div style=" position:relative;width: 100%;height: 450px;top:160px;background-color:  #F5F8F9;display: ; ">
+						<div class="thechart">
+							<div id="thechartleft" style="width: 100%;height:95%;position: relative;top:10px"></div>
+							<script>
+								// 绘制图表。
+								echarts.init(document.getElementById('thechartleft')).setOption({
+									title: {
+				text: '饼状图数据展示',
+				left: '50%',
+				textAlign: 'center',
+				textStyle: {
+					fontSize: 32, //字体大小
+				},
+			},
+									series: {
+										type: 'pie',
+										data: [{
+												name: 'Mon',
+												value: 10
+											},
+											{
+												name: 'Tue',
+												value: 8
+											},
+											{
+												name: 'Wed',
+												value: 8
+											},
+											{
+												name: 'Thi',
+												value: 4
+											},
+											{
+												name: 'Fri',
+												value: 30
+											},
+											{
+												name: 'Sat',
+												value: 20
+											},
+											{
+												name: 'Sun',
+												value: 20
+											}
+
+										]
+									}
+								});
+							</script>
+
+						</div>
+						<div class="thechart" style="position: relative;left: 27px;">
+						<div id="thechartright" style="width: 100%;height:95%;position: relative;top:10px"></div>
+						  <script type="text/javascript">
+															// 基于准备好的dom，初始化echarts实例
+												var myChart = echarts.init(document.getElementById('thechartright'));
+
+												// 指定图表的配置项和数据
+												var option = {
+															
+												title: {
+												text: '柱状图数据展示',
+												left: '50%',
+												textAlign: 'center',
+											
+												textStyle: {
+													fontSize: 32, //字体大小
+												},
+											},
+											color: ['#3398DB'],
+											tooltip: {
+												trigger: 'axis',
+												axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+													type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+												}
+											},
+											grid: {
+												left: '3%',
+												right: '4%',
+												bottom: '3%',
+												containLabel: true
+											},
+											xAxis: [
+												{
+													type: 'category',
+													data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+													axisTick: {
+														alignWithLabel: true
+													}
+												}
+											],
+											yAxis: [
+												{	
+													name:"商品数",
+													nameTextStyle:{  fontWeight : 'bold'},
+													type: 'value',
+													
+													splitLine:{
+														show:true,
+														lineStyle:{
+															type:'dashed'
+														}
+													}
+ 
+												},
+												
+											],
+											series: [
+												{	 
+													name: '直接访问',
+													type: 'bar',
+													barWidth: '30%',//柱图宽度
+													data: [9, 11, 13, 10, 8, 10, 5]
+												}
+											]
+										};
+
+
+							// 使用刚指定的配置项和数据显示图表。
+							myChart.setOption(option);
+    </script>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		<div id=" " style=" height: 400px;background-color: #202124;width:100%">
+			<div id="logo_two" ><center><b style="position: relative;top:10px">L O G O</b></center></div>
+				<div class="bottombig">
+					<div class="bottomsmall" ><b>NEWS</b></div>
+					<div class="bottomsmall" ><b>CHANMNELS</b></div>
+					<div class="bottomsmall" ><b>OVERVIEW</b></div>
+					<div class="bottomsmall" ><b>TIMELINE</b></div>
+				</div>
+				<div class="bottombig">
+					<div class="bottomsmall" ><b>SPORT</b></div>
+					<div class="bottomsmall" ><b>CULTURE</b></div>
+					<div class="bottomsmall" ><b>NATURE</b></div>
+					<div class="bottomsmall" ><b>MUSIC</b></div>
+				</div>
+				<div class="bottombig">
+					<div class="bottomsmall" ><b>AUTOS</b></div>
+					<div class="bottomsmall" ><b>WEATHER</b></div>
+					<div class="bottomsmall" ><b>LOCAL</b></div>
+					<div class="bottomsmall" ><b>SHOP</b></div>
+				</div>
+				<div class="bottombig">
+					<div class="bottomsmall" ><b>FUTURE</b></div>
+					<div class="bottomsmall" ><b>FOOD</b></div>
+					<div class="bottomsmall" ><b>EARTH</b></div>
+					<div class="bottomsmall" ><b>TV</b></div>
+				</div>
+				<div class="bottombig">
+					<div class="bottomsmall" ><b>TRAVEL</b></div>
+					<div class="bottomsmall" ><b>RADIO</b></div>
+					
+				</div>
+		</div>
+	
+		<div id=" " style=" height: 70px;background-color: #1C1D20 ">
+
+		</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript ">
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('center_tb'));
+
+		var dataIPSxAxis = ['01/26', '123', '01/28', '123', '01/30', '123', '02/01', '', '02/3', '', '02/5', '', '02/07', '', '02/09', '', '02/11', '', '02/13', '', '02-15', '', '02/17', '', '02/19', '', '02/21', '', '02/23', '']
+		var dataIPS = [8972, 4000, 6448, 8200, 7456, 2200, 5824, 3500, 8123, 2400, 300, 6200, 300, 8500, 5319, 9100, 7463, 8300, 1435, 4400, 9426, 6200, 8187, 6200, 8297, 5100, 443, 1800, 9135, 9200];
+		var dataIPS2 = [20, 70, 60, 80, 100, 90];
+		option = {
+			title: {
+				text: '曲线图数据展示',
+				left: '50%',
+				textAlign: 'center',
+				textStyle: {
+					fontSize: 32, //字体大小
+				},
+			},
+			backgroundColor: "#FFFFFF ",
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'cross',
+					label: {
+						backgroundColor: '#6a7985',
+					},
+				}
+			},
+			color: ["#0080ff ", "#4cd5ce "],
+			toolbox: {
+				// feature: {
+				//     saveAsImage: {}
+				// }
+			},
+			grid: {
+				left: '5%',
+				right: '5%',
+				top: '16%',
+				bottom: '5%',
+				containLabel: true
+			},
+			xAxis: [{
+				type: 'category',
+
+				boundaryGap: false,
+				data: ['01/26', '01/27', '01/28', '01/29', '01/30', '01/31', '02/1', '02/2', '02/3', '02/4', '02/5', '02/6', '02/07', '02/8', '02/09', '02/10', '02/11', '02/12', '02/13', '02/14', '02/15', '02/16', '02/17', '02/18', '02/19', '02/20', '02/21', '02/22', '02/23', '02/24'],
+
+				axisLabel: {
+					interval: 1,
+					show: true,
+					textStyle: {
+						color: '#6F6F6F',
+						fontSize: 12,
+					},
+					formatter: function(value) {
+						//debugger
+						var ret = " "; //拼接加\n返回的类目项
+						var maxLength = 5; //每项显示文字个数
+						var valLength = value.length; //X轴类目项的文字个数
+						var rowN = Math.ceil(valLength / maxLength); //类目项需要换行的行数
+						if(rowN > 1) //如果类目项的文字大于3,
+						{
+							for(var i = 0; i < rowN; i++) {
+								var temp = " "; //每次截取的字符串
+								var start = i * maxLength; //开始截取的位置
+								var end = start + maxLength; //结束截取的位置
+								//这里也可以加一个是否是最后一行的判断，但是不加也没有影响，那就不加吧
+								temp = value.substring(start, end) + "\n ";
+								ret += temp; //凭借最终的字符串
+							}
+							return ret;
+						} else {
+							return value;
+						}
+					},
+
+				},
+				axisLine: {
+					lineStyle: {
+						color: '#0a2b52',
+						width: 0.5, //这里是为了突出显示加上的
+					}
+				}
+			}],
+			yAxis: [{
+				type: 'value',
+
+				axisLine: {
+
+					onZero: false,
+					lineStyle: {
+						color: '#0a2b52',
+						width: 1, //这里是为了突出显示加上的
+					}
+				},
+				axisLine: {
+					show: false
+				},
+				axisLabel: {
+
+					formatter: function(val) {
+						return val + ' 人';
+					},
+					show: true,
+					textStyle: {
+						color: '#6F6F6F' //字体颜色
+					}
+				},
+				splitLine: {
+
+					show: true,
+					lineStyle: {
+						type: 'dashed'
+
+					}
+
+				},
+			}],
+			series: [{
+					name: '最高水量',
+					type: 'line',
+					smooth: true,
+					//  symbol: "none ", //去掉折线点
+					stack: 100,
+					symbolSize: 8, //拐点大小
+
+					itemStyle: {
+						normal: { //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+							label: {
+								show: true,
+								textStyle: {
+									color: '#4687F0'
+								},
+							},
+							color: '#4687F0',
+							borderColor: '#4A8AF0', //拐点边框颜色
+							borderWidth: 2, //拐点边框大小
+							color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+								offset: 0,
+								color: '#F3F6FE' // 0% 处的颜色
+							}, {
+								offset: 0.5,
+								color: '#F3F6FE' // 100% 处的颜色
+							}, {
+								offset: 1,
+								color: '#F3F6FE' // 100% 处的颜色
+							}]), //背景渐变色
+							lineStyle: { // 系列级个性化折线样式
+								width: 3,
+								type: 'solid',
+								color: "#4A8AEF "
+
+							}
+						},
+						emphasis: {
+							color: '#ffffff',
+							lineStyle: { // 系列级个性化折线样式
+								width: 4.5,
+								type: 'dotted',
+								color: "#02675f " //折线的颜色
+							}
+						}
+					}, //线条样式
+					symbolSize: 5, //折线点的大小
+
+					areaStyle: {
+						normal: {
+
+						}
+					},
+
+					data: dataIPS,
+
+				},
+
+			]
+		}; // 使用刚指定的配置项和数据显示图表。
+		myChart.setOption(option);
+	</script>
+	<style>
+		@import url("css/index.css ");
+		.el-carousel__item h3 {
+			color: #475669;
+			font-size: 14px;
+			opacity: 0.75;
+			line-height: 150px;
+			margin: 0;
+		}
+		
+		.el-carousel__item:nth-child(2n) {
+			background-color: #99a9bf;
+		}
+		
+		.el-carousel__item:nth-child(2n+1) {
+			background-color: #d3dce6;
+		}
+	</style>
+
+</html>
